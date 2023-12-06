@@ -30,6 +30,7 @@ namespace Registe_loginDeskapp
         {
             
                 userlog user = new userlog();
+            int pass = int.Parse(passtxt.Text);
                 user=db.userlogs.FirstOrDefault(x=>x.Username==usernametxt.Text&&x.Passwords == passtxt.Text);
                 if (user!=null)
                 {

@@ -86,7 +86,7 @@ namespace Registe_loginDeskapp
                     MessageBox.Show("Ensure The Age Please");
                 }
             }
-            else if(!isvalid(passtxt.Text))
+            else if (!isvalid(passtxt.Text))
             {
                 MessageBox.Show("Password Must Be strong");
             }

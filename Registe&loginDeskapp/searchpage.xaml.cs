@@ -29,8 +29,8 @@ namespace Registe_loginDeskapp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             userlog user = new userlog();
-            string ages = user.Age;
-            dgrid.ItemsSource = db.userlogs.Where(x => x.City == textsearch.Text).ToList();
+            //string ages = user.Age;
+            dgrid.ItemsSource = db.userlogs.Where(x => x.City.Contains(textsearch.Text)).ToList();
             this.DataContext = user;
             //dgrid.ItemsSource=db.userlogs.Where(x=> x.City == textsearch.Text).ToList();
         }
